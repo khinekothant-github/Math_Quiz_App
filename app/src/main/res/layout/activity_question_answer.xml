@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".question_answer">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="591dp"
+        android:layout_height="788dp"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/leveltextview"
+        android:layout_width="93dp"
+        android:layout_height="21dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Level Name"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+
+        android:id="@+id/questionindextrack"
+        android:layout_width="117dp"
+        android:layout_height="26dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Questions: 1/10"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltextview"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+
+        android:id="@+id/timelimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Time Limit: No TimeLimit"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionindextrack"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+
+        android:id="@+id/Question"
+        android:layout_width="223dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:fontFamily="@font/boogaloo"
+        android:inputType="text"
+        android:text="What is 9+2?"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timelimit"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/boogaloo"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/two"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Question"
+        app:layout_constraintTop_toBottomOf="@+id/Question" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/boogaloo"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/Question"
+        app:layout_constraintTop_toBottomOf="@+id/Question" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/boogaloo"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/four"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintVertical_bias="0.211" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="#00B8D4"
+        android:fontFamily="@font/boogaloo"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="#FF6D00"
+        android:fontFamily="@font/boogaloo"
+        android:text="Submit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
